@@ -1,3 +1,4 @@
+"use strict";
 
 //funtion to slide out the info panel for each portfolio item
 function show(id) {
@@ -24,7 +25,7 @@ function hide(id) {
   }
 }
 //if a portfolio item is clicked on, this checks if the info panel is currently
-//visible, then calls the appropriate function to change state
+//visible or not, then calls the appropriate function to change state
 function clickHandler(id) {
   var element = document.getElementById(id);
   if (element.className == 'info-panel-closed info-panel-open') {
